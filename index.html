@@ -2,10 +2,7 @@
 <html lang="en">
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"
-		></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
@@ -29,26 +26,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://auto-gume.netlify.app" />
-		<meta
-			property="og:title"
-			content="Zimske gume, gume za sve sezone, letnje gume "
-		/>
+		<meta property="og:title" content="Zimske gume, gume za sve sezone, letnje gume " />
 		<meta
 			property="og:description"
 			content="Zimske gume, letnje gume  i gume za sve sezone za različite tipove vozila. Najveća online prodaja guma u Srbiji. 024-41-55-402"
 		/>
-		<meta
-			property="og:image"
-			content="https://www.internet-prodaja-guma.com/images/fb.png"
-		/>
-		<meta
-			name="twitter:title"
-			content="Zimske gume, gume za sve sezone, letnje gume "
-		/>
+		<meta property="og:image" content="https://www.internet-prodaja-guma.com/images/fb.png" />
+		<meta name="twitter:title" content="Zimske gume, gume za sve sezone, letnje gume " />
 		<meta
 			name="twitter:description"
 			content="Zimske gume, letnje gume  i gume za sve sezone za različite tipove vozila. Najveća online prodaja guma u Srbiji. 024-41-55-402"
 		/>
+		<meta name="robots" content="index, follow" />
 		<link
 			rel="icon"
 			type="image/png"
@@ -61,13 +50,642 @@
 			sizes="16x16"
 			href="https://www.internet-prodaja-guma.com/mida/assets/favicon/favicon-16x16.png"
 		/>
-		<link rel="stylesheet" href="output.css" />
+		<script src="https://kit.fontawesome.com/7a4ce84ec1.js" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Yantramanav:100,300,400,700&amp;display=swap&amp;subset=latin-ext"
+			rel="stylesheet"
+			as="style"
+		/>
+		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="style/custom.css" />
-		<title>
-			Zimske gume, gume za sve sezone, letnje gume - Internet Prodaja Guma
-		</title>
+		<title>Zimske gume, gume za sve sezone, letnje gume - Internet Prodaja Guma</title>
 	</head>
-	<body>
-		<h1 class="bg-red-100">Hello World!</h1>
+	<body class="text-sm md:text-lg">
+		<!-- Navbar -->
+		<div class="flex items-center py-10 px-5 justify-between">
+			<div class="flex space-x-8 items-center">
+				<a href="index.html">
+					<img
+						src="https://www.internet-prodaja-guma.com/mida/assets/img/logo-ipg.svg"
+						alt="logo"
+						class="w-24 md:w-40"
+					/>
+				</a>
+				<a href="stari_dot.html" class="font-bold hover:text-gray-500 transition-all duration-200 hidden lg:block"
+					>STARI DOT</a
+				>
+				<a href="kontakt.html" class="font-bold hover:text-gray-500 transition-all duration-200 hidden lg:block"
+					>KONTAKT</a
+				>
+				<a
+					href="najcesca_pitanja.html"
+					class="font-bold hover:text-gray-500 transition-all duration-200 hidden lg:block"
+					>NAJČEŠĆA PITANJA</a
+				>
+				<a href="opsti_uslovi.html" class="font-bold hover:text-gray-500 transition-all duration-200 hidden lg:block"
+					>OPŠTI USLOVI</a
+				>
+				<a href="tel:+381244155402" class="font-bold hover:text-gray-500 transition-all duration-200 hidden lg:block"
+					><i class="fas fa-phone-alt"></i> 024 / 4155-402</a
+				>
+			</div>
+			<div class="flex items-center space-x-5">
+				<button
+					class="
+						p-4
+						bg-gray-400
+						font-bold
+						text-white
+						rounded
+						hover:bg-gray-500
+						transition-all
+						duration-200
+						hidden
+						lg:block
+					"
+				>
+					<i class="fas fa-user-plus mr-2"></i>
+					PRIJAVA
+				</button>
+				<button id="menu-toggle" onclick="openMenu()" class="lg:hidden text-3xl">
+					<i class="fas fa-bars"></i>
+				</button>
+				<button class="p-4 bg-yellow-500 font-bold text-white rounded hover:bg-yellow-600 transition-all duration-200">
+					<i class="fas fa-shopping-cart mr-2"></i>
+					KORPA (0)
+				</button>
+			</div>
+		</div>
+
+		<!-- Mobile Navbar -->
+		<div
+			class="
+				fixed
+				w-screen
+				h-screen
+				-top-full
+				transition-all
+				duration-300
+				overflow-auto
+				bg-gray-100
+				p-5
+				md:p-10
+				flex flex-col
+				items-center
+				z-50
+			"
+			id="mobile-navbar"
+		>
+			<button class="text-4xl w-min ml-auto hover:text-gray-600 transition-all duration-200" onclick="closeMenu()">
+				<i class="fas fa-times"></i>
+			</button>
+			<div class="flex flex-col items-center space-y-20 w-full">
+				<a href="stari_dot.html" class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					>STARI DOT</a
+				>
+				<a href="kontakt.html" class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					>KONTAKT</a
+				>
+				<a
+					href="najcesca_pitanja.html"
+					class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					>NAJČEŠĆA PITANJA</a
+				>
+				<a href="opsti_uslovi.html" class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					>OPŠTI USLOVI</a
+				>
+				<a href="tel:+381244155402" class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					><i class="fas fa-phone-alt"></i> 024 / 4155-402</a
+				>
+				<button class="p-4 bg-gray-400 font-bold text-white rounded hover:bg-gray-500 transition-all duration-200">
+					<i class="fas fa-user-plus mr-2"></i>
+					PRIJAVA
+				</button>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div class="px-5 mx-auto max-w-screen-lg bg-no-repeat">
+			<!-- Carousel -->
+			<div class="carousel relative rounded overflow-hidden shadow-xl">
+				<div class="carousel-inner relative overflow-hidden w-full">
+					<!--Slide 1-->
+					<input
+						class="carousel-open"
+						type="radio"
+						id="carousel-1"
+						name="carousel"
+						aria-hidden="true"
+						hidden=""
+						checked="checked"
+					/>
+					<div
+						class="
+							carousel-item
+							absolute
+							opacity-0
+							bg-center
+							text-white
+							p-10
+							flex flex-col
+							justify-between
+							items-center
+							md:items-start
+							h-80
+						"
+						style="text-shadow: 2px 2px rgb(59, 59, 59)"
+					>
+						<img
+							class="absolute inset-0 filter contrast-50 object-cover"
+							src="https://images.unsplash.com/photo-1601411101851-ea0e07766235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"
+						/>
+						<div class="z-10">
+							<h1 class="text-3xl font-bold mb-5">
+								Vozi odmah, plati kasnije, <span class="text-xl">na rate, bez odlaska u banku!</span>
+							</h1>
+							<p class="text-lg">Web kredit od 3 do 24 meseca, za svega 20 minuta</p>
+						</div>
+						<button
+							class="
+								bg-yellow-500
+								transition-all
+								duration-200
+								hover:bg-yellow-600
+								rounded
+								text-white
+								font-bold
+								text-lg
+								px-5
+								py-3
+								w-max
+								z-10
+							"
+						>
+							SAZNAJ VIŠE
+						</button>
+					</div>
+					<label
+						for="carousel-3"
+						class="
+							control-1
+							w-10
+							h-10
+							ml-2
+							md:ml-10
+							absolute
+							cursor-pointer
+							font-bold
+							text-black
+							hover:text-white
+							rounded-full
+							bg-white
+							hover:bg-blue-700
+							leading-tight
+							text-center
+							z-10
+							inset-y-0
+							left-0
+							my-auto
+							hidden
+							justify-center
+							content-center
+						"
+						><i class="fas fa-angle-left mt-3"></i
+					></label>
+					<label
+						for="carousel-2"
+						class="
+							next
+							control-1
+							w-10
+							h-10
+							mr-2
+							md:mr-10
+							absolute
+							cursor-pointer
+							hidden
+							font-bold
+							text-black
+							hover:text-white
+							rounded-full
+							bg-white
+							hover:bg-blue-700
+							leading-tight
+							text-center
+							z-10
+							inset-y-0
+							right-0
+							my-auto
+						"
+						><i class="fas fa-angle-right mt-3"></i
+					></label>
+
+					<!--Slide 2-->
+					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
+					<div
+						class="
+							carousel-item
+							absolute
+							opacity-0
+							bg-center
+							text-white
+							p-10
+							flex flex-col
+							justify-between
+							items-center
+							md:items-start
+							h-80
+						"
+						style="text-shadow: 2px 2px rgb(59, 59, 59)"
+					>
+						<img
+							class="absolute inset-0 filter contrast-50 object-cover"
+							src="https://images.unsplash.com/photo-1559219582-54efb8aba261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+						/>
+						<div class="z-10">
+							<h1 class="font-bold text-4xl mb-5">Montiramo <span class="font-light">gume</span></h1>
+							<p class="text-lg">Uštedi novac, uštedi vreme.</p>
+						</div>
+						<button
+							class="
+								bg-yellow-500
+								transition-all
+								duration-200
+								hover:bg-yellow-600
+								rounded
+								text-white
+								font-bold
+								text-lg
+								px-5
+								py-3
+								w-max
+								z-10
+							"
+						>
+							SAZNAJ VIŠE
+						</button>
+					</div>
+					<label
+						for="carousel-1"
+						class="
+							control-2
+							w-10
+							h-10
+							ml-2
+							md:ml-10
+							absolute
+							cursor-pointer
+							hidden
+							font-bold
+							text-black
+							hover:text-white
+							rounded-full
+							bg-white
+							hover:bg-blue-700
+							leading-tight
+							text-center
+							z-10
+							inset-y-0
+							left-0
+							my-auto
+						"
+						><i class="fas fa-angle-left mt-3"></i
+					></label>
+					<label
+						for="carousel-3"
+						class="
+							next
+							control-2
+							w-10
+							h-10
+							mr-2
+							md:mr-10
+							absolute
+							cursor-pointer
+							hidden
+							font-bold
+							text-black
+							hover:text-white
+							rounded-full
+							bg-white
+							hover:bg-blue-700
+							leading-tight
+							text-center
+							z-10
+							inset-y-0
+							right-0
+							my-auto
+						"
+						><i class="fas fa-angle-right mt-3"></i
+					></label>
+
+					<!--Slide 3-->
+					<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
+					<div
+						class="carousel-item absolute opacity-0 text-white p-10 items-center md:items-start h-80"
+						style="text-shadow: 2px 2px rgb(59, 59, 59)"
+					>
+						<img
+							class="absolute inset-0 filter contrast-50 object-cover"
+							src="https://images.unsplash.com/photo-1558980394-4c7c9299fe96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+							style="z-index: -1"
+						/>
+						<div>
+							<h1 class="font-bold text-4xl mb-5">Najlakši način <span class="font-light">nabavke novih guma</span></h1>
+							<p class="text-lg">Prva i najveća internet prodaja guma u Srbiji.</p>
+						</div>
+					</div>
+					<label
+						for="carousel-2"
+						class="
+							control-3
+							w-10
+							h-10
+							ml-2
+							md:ml-10
+							absolute
+							cursor-pointer
+							hidden
+							font-bold
+							text-black
+							hover:text-white
+							rounded-full
+							bg-white
+							hover:bg-blue-700
+							leading-tight
+							text-center
+							z-10
+							inset-y-0
+							left-0
+							my-auto
+						"
+						><i class="fas fa-angle-left mt-3"></i
+					></label>
+					<label
+						for="carousel-1"
+						class="
+							next
+							control-3
+							w-10
+							h-10
+							mr-2
+							md:mr-10
+							absolute
+							cursor-pointer
+							hidden
+							font-bold
+							text-black
+							hover:text-white
+							rounded-full
+							bg-white
+							hover:bg-blue-700
+							leading-tight
+							text-center
+							z-10
+							inset-y-0
+							right-0
+							my-auto
+						"
+						><i class="fas fa-angle-right mt-3"></i
+					></label>
+
+					<!-- Add additional indicators for each slide-->
+					<ol class="carousel-indicators">
+						<li class="inline-block mr-3">
+							<label
+								for="carousel-1"
+								class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+								>•</label
+							>
+						</li>
+						<li class="inline-block mr-3">
+							<label
+								for="carousel-2"
+								class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+								>•</label
+							>
+						</li>
+						<li class="inline-block mr-3">
+							<label
+								for="carousel-3"
+								class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+								>•</label
+							>
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<!-- Filters -->
+			<div class="mt-5">
+				<div class="flex space-x-1">
+					<button
+						onmouseenter="mouseEnterFilter(event)"
+						onmouseleave="mouseLeaveFilter(event)"
+						onclick="makeActive(event)"
+						class="
+							bg-no-repeat
+							flex-1
+							bg-white
+							hover:bg-yellow-500
+							active-filter
+							p-1
+							md:p-3
+							transition-all
+							duration-200
+							rounded-tl-md
+							filter-button
+						"
+					>
+						<img src="assets/images/auto-svg-white.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="auto" />
+						<h1 class="hidden md:block pointer-events-none text-white"><span class="font-bold">Auto</span> gume</h1>
+					</button>
+
+					<button
+						onmouseenter="mouseEnterFilter(event)"
+						onmouseleave="mouseLeaveFilter(event)"
+						onclick="makeActive(event)"
+						class="
+							bg-no-repeat
+							flex-1
+							bg-white
+							hover:bg-yellow-500
+							p-1
+							md:p-3
+							transition-all
+							duration-200
+							filter-button
+						"
+					>
+						<img src="assets/images/kombi-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="kombi" />
+						<h1 class="hidden md:block pointer-events-none">Gume za <span class="font-bold">kombi</span></h1>
+					</button>
+
+					<button
+						onmouseenter="mouseEnterFilter(event)"
+						onmouseleave="mouseLeaveFilter(event)"
+						onclick="makeActive(event)"
+						class="
+							bg-no-repeat
+							flex-1
+							bg-white
+							hover:bg-yellow-500
+							p-1
+							md:p-3
+							transition-all
+							duration-200
+							filter-button
+						"
+					>
+						<img src="assets/images/suv-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="suv" />
+						<h1 class="hidden md:block pointer-events-none">Gume za <span class="font-bold">SUV</span></h1>
+					</button>
+
+					<button
+						onmouseenter="mouseEnterFilter(event)"
+						onmouseleave="mouseLeaveFilter(event)"
+						onclick="makeActive(event)"
+						class="
+							bg-no-repeat
+							flex-1
+							bg-white
+							hover:bg-yellow-500
+							p-1
+							md:p-3
+							transition-all
+							duration-200
+							filter-button
+						"
+					>
+						<img src="assets/images/skuter-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="skuter" />
+						<h1 class="hidden md:block pointer-events-none">Gume za <span class="font-bold">skuter</span></h1>
+					</button>
+
+					<button
+						onmouseenter="mouseEnterFilter(event)"
+						onmouseleave="mouseLeaveFilter(event)"
+						onclick="makeActive(event)"
+						class="
+							bg-no-repeat
+							flex-1
+							bg-white
+							hover:bg-yellow-500
+							p-1
+							md:p-3
+							transition-all
+							duration-200
+							filter-button
+						"
+					>
+						<img src="assets/images/motor-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="motor" />
+						<h1 class="hidden md:block pointer-events-none">Gume za <span class="font-bold">motor</span></h1>
+					</button>
+
+					<button
+						onmouseenter="mouseEnterFilter(event)"
+						onmouseleave="mouseLeaveFilter(event)"
+						onclick="makeActive(event)"
+						class="
+							bg-no-repeat
+							flex-1
+							bg-white
+							hover:bg-yellow-500
+							p-1
+							md:p-3
+							transition-all
+							duration-200
+							rounded-tr-md
+							filter-button
+						"
+					>
+						<img src="assets/images/agro-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="agro" />
+						<h1 class="hidden md:block pointer-events-none">Agro <span class="font-bold">program</span></h1>
+					</button>
+				</div>
+				<div class="bg-yellow-500 py-5 px-3 rounded-b-md">
+					<h1 class="text-2xl text-white font-bold mb-5 text-center">Izaberite kategoriju</h1>
+					<div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
+						<div
+							class="
+								rounded-md
+								bg-white
+								flex-1 flex
+								items-center
+								cursor-pointer
+								hover:bg-red-600 hover:text-white
+								transition-all
+								duration-200
+							"
+						>
+							<div class="w-20 md:w-12 h-12 flex items-center justify-center text-white bg-red-600 rounded-md p-2">
+								<img src="https://www.internet-prodaja-guma.com/mida/assets/img/letnja-white.svg" alt="Letnja guma" />
+							</div>
+							<span class="flex-1 text-center text-sm font-bold">LETNJA</span>
+						</div>
+
+						<div
+							class="
+								rounded-md
+								bg-white
+								flex-1 flex
+								items-center
+								cursor-pointer
+								hover:bg-red-600 hover:text-white
+								transition-all
+								duration-200
+							"
+						>
+							<div class="w-20 md:w-12 h-12 flex items-center justify-center text-white bg-red-600 rounded-md p-2">
+								<img src="https://www.internet-prodaja-guma.com/mida/assets/img/zimska-white.svg" alt="Zimska guma" />
+							</div>
+							<span class="flex-1 text-center text-sm font-bold">ZIMSKA</span>
+						</div>
+
+						<div
+							class="
+								rounded-md
+								bg-white
+								flex-1 flex
+								items-center
+								cursor-pointer
+								hover:bg-red-600 hover:text-white
+								transition-all
+								duration-200
+							"
+						>
+							<div class="w-20 md:w-12 h-12 flex items-center justify-center text-white bg-red-600 rounded-md p-2">
+								<img
+									src="https://www.internet-prodaja-guma.com/mida/assets/img/sve-sezone-wite.svg"
+									alt="Guma za sve sezone"
+								/>
+							</div>
+							<span class="flex-1 text-center text-sm font-bold">SVE SEZONE</span>
+						</div>
+
+						<div
+							class="
+								rounded-md
+								bg-white
+								flex-1 flex
+								items-center
+								cursor-pointer
+								hover:bg-red-600 hover:text-white
+								transition-all
+								duration-200
+							"
+						>
+							<div class="w-20 md:w-12 h-12 flex items-center justify-center text-white bg-red-600 rounded-md p-2">
+								<img
+									src="https://www.internet-prodaja-guma.com/mida/assets/img/kategorija-vikend-akcija.svg"
+									alt="Novo"
+								/>
+							</div>
+							<span class="flex-1 text-center text-sm font-bold">VIKEND AKCIJA</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
