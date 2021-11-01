@@ -166,7 +166,7 @@
 		</div>
 
 		<!-- Content -->
-		<div class="px-5 mx-auto max-w-screen-lg bg-no-repeat">
+		<div class="px-5 mx-auto max-w-screen-lg pb-10">
 			<!-- Carousel -->
 			<div class="carousel relative rounded overflow-hidden shadow-xl">
 				<div class="carousel-inner relative overflow-hidden w-full">
@@ -181,49 +181,47 @@
 						checked="checked"
 					/>
 					<div
-						class="
-							carousel-item
-							absolute
-							opacity-0
-							bg-center
-							text-white
-							p-10
-							flex flex-col
-							justify-between
-							items-center
-							md:items-start
-							h-80
+						class="carousel-item absolute opacity-0 bg-center text-white h-80 bg-cover"
+						style="
+							text-shadow: 2px 2px rgb(59, 59, 59);
+							background-image: url('https://images.unsplash.com/photo-1601411101851-ea0e07766235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80');
 						"
-						style="text-shadow: 2px 2px rgb(59, 59, 59)"
 					>
-						<img
-							class="absolute inset-0 filter contrast-50 object-cover"
-							src="https://images.unsplash.com/photo-1601411101851-ea0e07766235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"
-						/>
-						<div class="z-10">
-							<h1 class="text-3xl font-bold mb-5">
-								Vozi odmah, plati kasnije, <span class="text-xl">na rate, bez odlaska u banku!</span>
-							</h1>
-							<p class="text-lg">Web kredit od 3 do 24 meseca, za svega 20 minuta</p>
-						</div>
-						<button
+						<div
 							class="
-								bg-yellow-500
-								transition-all
-								duration-200
-								hover:bg-yellow-600
-								rounded
-								text-white
-								font-bold
-								text-lg
-								px-5
-								py-3
-								w-max
-								z-10
+								p-10
+								flex flex-col
+								justify-between
+								items-center
+								md:items-start
+								h-full
+								backdrop-filter backdrop-contrast-50
 							"
 						>
-							SAZNAJ VIŠE
-						</button>
+							<div>
+								<h1 class="text-3xl font-bold mb-5">
+									Vozi odmah, plati kasnije, <span class="text-xl">na rate, bez odlaska u banku!</span>
+								</h1>
+								<p class="text-lg">Web kredit od 3 do 24 meseca, za svega 20 minuta</p>
+							</div>
+							<button
+								class="
+									bg-yellow-500
+									transition-all
+									duration-200
+									hover:bg-yellow-600
+									rounded
+									text-white
+									font-bold
+									text-lg
+									px-5
+									py-3
+									w-max
+								"
+							>
+								SAZNAJ VIŠE
+							</button>
+						</div>
 					</div>
 					<label
 						for="carousel-3"
@@ -284,47 +282,45 @@
 					<!--Slide 2-->
 					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
 					<div
-						class="
-							carousel-item
-							absolute
-							opacity-0
-							bg-center
-							text-white
-							p-10
-							flex flex-col
-							justify-between
-							items-center
-							md:items-start
-							h-80
+						class="carousel-item absolute opacity-0 bg-center text-white h-80 bg-cover"
+						style="
+							text-shadow: 2px 2px rgb(59, 59, 59);
+							background-image: url('https://images.unsplash.com/photo-1559219582-54efb8aba261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
 						"
-						style="text-shadow: 2px 2px rgb(59, 59, 59)"
 					>
-						<img
-							class="absolute inset-0 filter contrast-50 object-cover"
-							src="https://images.unsplash.com/photo-1559219582-54efb8aba261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-						/>
-						<div class="z-10">
-							<h1 class="font-bold text-4xl mb-5">Montiramo <span class="font-light">gume</span></h1>
-							<p class="text-lg">Uštedi novac, uštedi vreme.</p>
-						</div>
-						<button
+						<div
 							class="
-								bg-yellow-500
-								transition-all
-								duration-200
-								hover:bg-yellow-600
-								rounded
-								text-white
-								font-bold
-								text-lg
-								px-5
-								py-3
-								w-max
-								z-10
+								p-10
+								flex flex-col
+								justify-between
+								items-center
+								md:items-start
+								h-full
+								backdrop-filter backdrop-contrast-50
 							"
 						>
-							SAZNAJ VIŠE
-						</button>
+							<div>
+								<h1 class="font-bold text-4xl mb-5">Montiramo <span class="font-light">gume</span></h1>
+								<p class="text-lg">Uštedi novac, uštedi vreme.</p>
+							</div>
+							<button
+								class="
+									bg-yellow-500
+									transition-all
+									duration-200
+									hover:bg-yellow-600
+									rounded
+									text-white
+									font-bold
+									text-lg
+									px-5
+									py-3
+									w-max
+								"
+							>
+								SAZNAJ VIŠE
+							</button>
+						</div>
 					</div>
 					<label
 						for="carousel-1"
@@ -383,15 +379,13 @@
 					<!--Slide 3-->
 					<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
 					<div
-						class="carousel-item absolute opacity-0 text-white p-10 items-center md:items-start h-80"
-						style="text-shadow: 2px 2px rgb(59, 59, 59)"
+						class="carousel-item absolute opacity-0 text-white h-80 bg-cover"
+						style="
+							text-shadow: 2px 2px rgb(59, 59, 59);
+							background-image: url('https://images.unsplash.com/photo-1558980394-4c7c9299fe96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
+						"
 					>
-						<img
-							class="absolute inset-0 filter contrast-50 object-cover"
-							src="https://images.unsplash.com/photo-1558980394-4c7c9299fe96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-							style="z-index: -1"
-						/>
-						<div>
+						<div class="p-10 items-center md:items-start h-full backdrop-filter backdrop-contrast-50">
 							<h1 class="font-bold text-4xl mb-5">Najlakši način <span class="font-light">nabavke novih guma</span></h1>
 							<p class="text-lg">Prva i najveća internet prodaja guma u Srbiji.</p>
 						</div>
@@ -603,9 +597,10 @@
 						<h1 class="hidden md:block pointer-events-none">Agro <span class="font-bold">program</span></h1>
 					</button>
 				</div>
+
 				<div class="bg-yellow-500 py-5 px-3 rounded-b-md">
 					<h1 class="text-2xl text-white font-bold mb-5 text-center">Izaberite kategoriju</h1>
-					<div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
+					<div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2" id="categories">
 						<div
 							class="
 								rounded-md
@@ -682,6 +677,61 @@
 								/>
 							</div>
 							<span class="flex-1 text-center text-sm font-bold">VIKEND AKCIJA</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- More information -->
+			<div class="mt-5 rounded-md bg-white p-7">
+				<h1 class="text-2xl font-bold text-center mb-3">Kliknite da saznate više o:</h1>
+				<div class="flex w-full flex-wrap text-2xl">
+					<div class="flex-1 flex m-5">
+						<div class="flex flex-1 items-center" style="min-width: 200px">
+							<img
+								src="https://www.internet-prodaja-guma.com/mida/assets/img/mreza-vulkanizera.svg"
+								alt="mrezi"
+								class="mr-3"
+							/>
+							<div>
+								<span class="font-bold">Mreži</span>
+								vulkanizera
+							</div>
+						</div>
+						<div class="flex flex-1 items-center" style="min-width: 200px">
+							<img
+								src="https://www.internet-prodaja-guma.com/mida/assets/img/stari_dot.svg"
+								alt="starom"
+								class="mr-3"
+							/>
+							<div>
+								<span class="font-bold">Starom</span>
+								DOT-u
+							</div>
+						</div>
+					</div>
+					<div class="flex-1 flex m-5">
+						<div class="flex flex-1 items-center" style="min-width: 200px">
+							<img
+								src="https://www.internet-prodaja-guma.com/mida/assets/img/nacin-placanja.svg"
+								alt="kupovini"
+								class="mr-3"
+							/>
+							<div>
+								<span class="font-bold">Kupovini</span>
+								na rate
+							</div>
+						</div>
+						<div class="flex flex-1 items-center" style="min-width: 200px">
+							<img
+								src="https://www.internet-prodaja-guma.com/mida/assets/img/besplatna-isporuka.svg"
+								alt="besplatnoj"
+								class="mr-3"
+							/>
+							<div>
+								<span class="font-bold">Besplatnoj</span>
+								isporuci
+							</div>
 						</div>
 					</div>
 				</div>

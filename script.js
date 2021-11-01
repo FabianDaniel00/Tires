@@ -33,6 +33,7 @@ const makeActive = (event) => {
 	const filters = document.getElementsByClassName("filter-button");
 	for (const filter of filters) {
 		filter.classList.remove("active-filter");
+		filter.classList.remove("hover-filter");
 		const id = filter.querySelector("img").id;
 		filter.querySelector("img").src = "assets/images/" + id + "-svg.png";
 		filter.querySelector("h1").classList.remove("text-white");
@@ -41,4 +42,15 @@ const makeActive = (event) => {
 	event.target.querySelector("img").src = "assets/images/" + id + "-svg-white.png";
 	event.target.classList.add("active-filter");
 	event.target.querySelector("h1").classList.add("text-white");
+	const categories = document.getElementById("categories").children;
+	const categoriesLength = categories.length;
+	if (id === "skuter" || id === "motor" || id === "agro") {
+		for (let i = 1; i < categoriesLength; i++) {
+			categories[i].classList.add("hidden");
+		}
+	} else {
+		for (let i = 1; i < categoriesLength; i++) {
+			categories[i].classList.remove("hidden");
+		}
+	}
 };
