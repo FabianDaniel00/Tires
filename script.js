@@ -8,10 +8,12 @@ const closeMenu = () => {
 
 const slides = document.getElementsByClassName("carousel-open");
 let index = 1;
-setInterval(() => {
-	slides[index++].checked = true;
-	if (index === 3) index = 0;
-}, 5000);
+if (slides.length) {
+	setInterval(() => {
+		slides[index++].checked = true;
+		if (index === 3) index = 0;
+	}, 5000);
+}
 
 const mouseEnterFilter = (event) => {
 	const id = event.target.querySelector("button img").id;
@@ -54,3 +56,42 @@ const makeActive = (event) => {
 		}
 	}
 };
+const button = document.getElementById("collapse-button");
+
+button.addEventListener("click", () => {
+	const content = document.getElementById("result");
+	button.classList.toggle("rounded-md");
+	button.children[0].classList.toggle("opacity-0");
+	button.children[1].classList.toggle("opacity-0");
+	expandElement(content, "collapsed");
+});
+
+function expandElement(elem, collapseClass) {
+	// debugger;
+	elem.style.height = "";
+	elem.style.transition = "none";
+
+	const startHeight = window.getComputedStyle(elem).height;
+
+	// Remove the collapse class, and force a layout calculation to get the final height
+	elem.classList.toggle(collapseClass);
+	const height = window.getComputedStyle(elem).height;
+
+	// Set the start height to begin the transition
+	elem.style.height = startHeight;
+
+	// wait until the next frame so that everything has time to update before starting the transition
+	requestAnimationFrame(() => {
+		elem.style.transition = "";
+
+		requestAnimationFrame(() => {
+			elem.style.height = height;
+		});
+	});
+
+	// Clear the saved height values after the transition
+	elem.addEventListener("transitionend", () => {
+		elem.style.height = "";
+		elem.removeEventListener("transitionend", arguments.callee);
+	});
+}

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-sitemap: https://auto-gume.netlify.app/sitemap.xml
+sitemap: https://auto-gume.netlify.app/sitemap.xml/

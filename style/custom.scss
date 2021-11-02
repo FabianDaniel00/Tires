@@ -1,6 +1,7 @@
 body {
 	font-family: "Yantramanav", sans-serif;
 	font-stretch: expanded;
+	background-image: url("https://www.internet-prodaja-guma.com/mida/assets/img/rezultat-pretrage.jpg");
 }
 
 .mobile-navbar-hide {
@@ -42,4 +43,14 @@ body {
 
 .hover-filter {
 	border-radius: 6px 6px 0 0;
+}
+
+#result {
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+	height: auto;
+}
+
+#result.collapsed {
+	height: 0;
 }

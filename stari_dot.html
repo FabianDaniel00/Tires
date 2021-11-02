@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "UA-211437925-1");
-		</script>
-
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
@@ -51,7 +39,6 @@
 			href="https://www.internet-prodaja-guma.com/mida/assets/favicon/favicon-16x16.png"
 		/>
 		<script src="https://kit.fontawesome.com/7a4ce84ec1.js" crossorigin="anonymous"></script>
-		<script src="script.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Yantramanav:100,300,400,700&amp;display=swap&amp;subset=latin-ext"
 			rel="stylesheet"
@@ -59,7 +46,7 @@
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="style/custom.css" />
-		<title>Zimske gume, gume za sve sezone, letnje gume - Internet Prodaja Guma</title>
+		<title>Gume - Internet Prodaja Guma</title>
 	</head>
 	<body class="text-base md:text-lg relative bg-gray-50 bg-no-repeat">
 		<h1 class="bg-gray-300 font-bold text-lg sm:text-2xl p-3 text-center text-gray-500">
@@ -173,530 +160,84 @@
 
 		<!-- Content -->
 		<div class="px-5 mx-auto max-w-screen-xl pb-10">
-			<!-- Carousel -->
-			<div class="carousel relative rounded overflow-hidden shadow-xl">
-				<div class="carousel-inner relative overflow-hidden w-full">
-					<!--Slide 1-->
-					<input
-						class="carousel-open"
-						type="radio"
-						id="carousel-1"
-						name="carousel"
-						aria-hidden="true"
-						hidden=""
-						checked="checked"
-					/>
-					<div
-						class="carousel-item absolute opacity-0 bg-center text-white h-80 bg-cover"
-						style="
-							text-shadow: 2px 2px rgb(59, 59, 59);
-							background-image: url('https://images.unsplash.com/photo-1601411101851-ea0e07766235?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80');
-						"
-					>
-						<div
-							class="
-								p-10
-								flex flex-col
-								justify-between
-								items-center
-								md:items-start
-								h-full
-								backdrop-filter backdrop-contrast-50
-							"
-						>
-							<div>
-								<h1 class="text-3xl font-bold mb-5">
-									Vozi odmah, plati kasnije, <span class="text-xl">na rate, bez odlaska u banku!</span>
-								</h1>
-								<p class="text-lg">Web kredit od 3 do 24 meseca, za svega 20 minuta</p>
-							</div>
-							<button
-								class="
-									bg-yellow-500
-									transition-all
-									duration-200
-									hover:bg-yellow-600
-									rounded
-									text-white
-									font-bold
-									text-lg
-									px-5
-									py-3
-									w-max
-								"
-							>
-								SAZNAJ VIŠE
-							</button>
-						</div>
-					</div>
-					<label
-						for="carousel-3"
+			<!-- Results -->
+			<div>
+				<button
+					id="collapse-button"
+					class="
+						relative
+						py-8
+						px-6
+						pr-12
+						bg-white
+						font-bold
+						text-center text-4xl
+						rounded-t-md
+						w-full
+						transition-all
+						duration-300
+					"
+				>
+					Rezultati pretrage DOT guma
+					<i
 						class="
-							control-1
-							w-10
-							h-10
-							ml-2
-							md:ml-10
+							fas
+							fa-minus
 							absolute
-							cursor-pointer
-							font-bold
-							text-black
-							hover:text-white
-							rounded-full
-							bg-white
-							hover:bg-blue-700
-							leading-tight
-							text-center
-							z-10
-							inset-y-0
-							left-0
-							my-auto
-							hidden
-							justify-center
-							content-center
+							text-base
+							right-6
+							transform
+							top-1/2
+							-translate-y-1/2
+							transition-all
+							duration-300
 						"
-						><i class="fas fa-angle-left mt-3"></i
-					></label>
-					<label
-						for="carousel-2"
+					></i>
+					<i
 						class="
-							next
-							control-1
-							w-10
-							h-10
-							mr-2
-							md:mr-10
+							fas
+							fa-plus
 							absolute
-							cursor-pointer
-							hidden
-							font-bold
-							text-black
-							hover:text-white
-							rounded-full
-							bg-white
-							hover:bg-blue-700
-							leading-tight
-							text-center
-							z-10
-							inset-y-0
-							right-0
-							my-auto
+							text-base
+							right-6
+							transform
+							top-1/2
+							-translate-y-1/2
+							transition-all
+							duration-300
+							opacity-0
 						"
-						><i class="fas fa-angle-right mt-3"></i
-					></label>
-
-					<!--Slide 2-->
-					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
-					<div
-						class="carousel-item absolute opacity-0 bg-center text-white h-80 bg-cover"
-						style="
-							text-shadow: 2px 2px rgb(59, 59, 59);
-							background-image: url('https://images.unsplash.com/photo-1559219582-54efb8aba261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
-						"
-					>
-						<div
-							class="
-								p-10
-								flex flex-col
-								justify-between
-								items-center
-								md:items-start
-								h-full
-								backdrop-filter backdrop-contrast-50
-							"
+					></i>
+				</button>
+				<div id="result" class="bg-gray-300 font-light">
+					<p class="m-5">
+						Uštedite novac kupujući gume, popularno nazvane -
+						<span class="font-bold text-gray-500">gume sa starim dotom!</span>
+					</p>
+					<p class="mb-5 mx-5">
+						Popularan naziv - <span class="font-bold text-gray-500">gume sa starim dotom</span> - daje se onim gumama
+						koje su u magacinskim prostorima skladištene više od jedne ili dve godine. Njih ćete pronaći na ovoj
+						stranici sa jasno istaknutom informacijom o godini proizvodnje u formi - (DOT 0000).
+					</p>
+					<p class="mb-5 mx-5">
+						Stav i mišljenje stučnjaka koji se bave tematikom starosti gume jedinstveno je i potkrepljeno brojnim
+						istarživanjima. Ono upućuje na to da gume do pet ili šest godina strosti mogu biti u redovnoj prodaji, uz
+						uslov pravilnog skladištenja.
+					</p>
+					<p class="mb-5 mx-5">
+						Naglašeno je da starost gume nije definisana datumom proizvodnje, već momentom montaže i ekspolatacije.
+						Reagensi koji ulaze u sastav gume daju joj trajnost i sprečavaju njeno starenje tokom dužeg perioda.
+					</p>
+					<p class="mb-5 mx-5">
+						Na sledećem linku nalaze se podaci o stručnom istraživanju u vezi sa ovom temom -
+						<span class="font-bold text-gray-700 whitespace-nowrap"
+							>https://blog.ipg.rs/koliko-je-bitna-starost-gume</span
 						>
-							<div>
-								<h1 class="font-bold text-4xl mb-5">Montiramo <span class="font-light">gume</span></h1>
-								<p class="text-lg">Uštedi novac, uštedi vreme.</p>
-							</div>
-							<button
-								class="
-									bg-yellow-500
-									transition-all
-									duration-200
-									hover:bg-yellow-600
-									rounded
-									text-white
-									font-bold
-									text-lg
-									px-5
-									py-3
-									w-max
-								"
-							>
-								SAZNAJ VIŠE
-							</button>
-						</div>
-					</div>
-					<label
-						for="carousel-1"
-						class="
-							control-2
-							w-10
-							h-10
-							ml-2
-							md:ml-10
-							absolute
-							cursor-pointer
-							hidden
-							font-bold
-							text-black
-							hover:text-white
-							rounded-full
-							bg-white
-							hover:bg-blue-700
-							leading-tight
-							text-center
-							z-10
-							inset-y-0
-							left-0
-							my-auto
-						"
-						><i class="fas fa-angle-left mt-3"></i
-					></label>
-					<label
-						for="carousel-3"
-						class="
-							next
-							control-2
-							w-10
-							h-10
-							mr-2
-							md:mr-10
-							absolute
-							cursor-pointer
-							hidden
-							font-bold
-							text-black
-							hover:text-white
-							rounded-full
-							bg-white
-							hover:bg-blue-700
-							leading-tight
-							text-center
-							z-10
-							inset-y-0
-							right-0
-							my-auto
-						"
-						><i class="fas fa-angle-right mt-3"></i
-					></label>
-
-					<!--Slide 3-->
-					<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
-					<div
-						class="carousel-item absolute opacity-0 text-white h-80 bg-cover"
-						style="
-							text-shadow: 2px 2px rgb(59, 59, 59);
-							background-image: url('https://images.unsplash.com/photo-1558980394-4c7c9299fe96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
-						"
-					>
-						<div class="p-10 items-center md:items-start h-full backdrop-filter backdrop-contrast-50">
-							<h1 class="font-bold text-4xl mb-5">Najlakši način <span class="font-light">nabavke novih guma</span></h1>
-							<p class="text-lg">Prva i najveća internet prodaja guma u Srbiji.</p>
-						</div>
-					</div>
-					<label
-						for="carousel-2"
-						class="
-							control-3
-							w-10
-							h-10
-							ml-2
-							md:ml-10
-							absolute
-							cursor-pointer
-							hidden
-							font-bold
-							text-black
-							hover:text-white
-							rounded-full
-							bg-white
-							hover:bg-blue-700
-							leading-tight
-							text-center
-							z-10
-							inset-y-0
-							left-0
-							my-auto
-						"
-						><i class="fas fa-angle-left mt-3"></i
-					></label>
-					<label
-						for="carousel-1"
-						class="
-							next
-							control-3
-							w-10
-							h-10
-							mr-2
-							md:mr-10
-							absolute
-							cursor-pointer
-							hidden
-							font-bold
-							text-black
-							hover:text-white
-							rounded-full
-							bg-white
-							hover:bg-blue-700
-							leading-tight
-							text-center
-							z-10
-							inset-y-0
-							right-0
-							my-auto
-						"
-						><i class="fas fa-angle-right mt-3"></i
-					></label>
-
-					<!-- Add additional indicators for each slide-->
-					<ol class="carousel-indicators">
-						<li class="inline-block mr-3">
-							<label
-								for="carousel-1"
-								class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-								>•</label
-							>
-						</li>
-						<li class="inline-block mr-3">
-							<label
-								for="carousel-2"
-								class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-								>•</label
-							>
-						</li>
-						<li class="inline-block mr-3">
-							<label
-								for="carousel-3"
-								class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
-								>•</label
-							>
-						</li>
-					</ol>
-				</div>
-			</div>
-
-			<!-- Filters -->
-			<div class="mt-5 shadow-lg">
-				<div class="flex space-x-1">
-					<button
-						onmouseenter="mouseEnterFilter(event)"
-						onmouseleave="mouseLeaveFilter(event)"
-						onclick="makeActive(event)"
-						class="
-							bg-no-repeat
-							flex-1
-							bg-white
-							hover:bg-yellow-500
-							active-filter
-							p-1
-							md:p-3
-							transition-all
-							duration-200
-							rounded-tl-md
-							filter-button
-						"
-					>
-						<img src="assets/images/auto-svg-white.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="auto" />
-						<h1 class="hidden md:block pointer-events-none text-white transition-all duration-200">
-							<span class="font-bold">Auto</span> gume
-						</h1>
-					</button>
-
-					<button
-						onmouseenter="mouseEnterFilter(event)"
-						onmouseleave="mouseLeaveFilter(event)"
-						onclick="makeActive(event)"
-						class="
-							bg-no-repeat
-							flex-1
-							bg-white
-							hover:bg-yellow-500
-							p-1
-							md:p-3
-							transition-all
-							duration-200
-							filter-button
-						"
-					>
-						<img src="assets/images/kombi-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="kombi" />
-						<h1 class="hidden md:block pointer-events-none transition-all duration-200">
-							Gume za <span class="font-bold">kombi</span>
-						</h1>
-					</button>
-
-					<button
-						onmouseenter="mouseEnterFilter(event)"
-						onmouseleave="mouseLeaveFilter(event)"
-						onclick="makeActive(event)"
-						class="
-							bg-no-repeat
-							flex-1
-							bg-white
-							hover:bg-yellow-500
-							p-1
-							md:p-3
-							transition-all
-							duration-200
-							filter-button
-						"
-					>
-						<img src="assets/images/suv-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="suv" />
-						<h1 class="hidden md:block pointer-events-none transition-all duration-200">
-							Gume za <span class="font-bold">SUV</span>
-						</h1>
-					</button>
-
-					<button
-						onmouseenter="mouseEnterFilter(event)"
-						onmouseleave="mouseLeaveFilter(event)"
-						onclick="makeActive(event)"
-						class="
-							bg-no-repeat
-							flex-1
-							bg-white
-							hover:bg-yellow-500
-							p-1
-							md:p-3
-							transition-all
-							duration-200
-							filter-button
-						"
-					>
-						<img src="assets/images/skuter-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="skuter" />
-						<h1 class="hidden md:block pointer-events-none transition-all duration-200">
-							Gume za <span class="font-bold">skuter</span>
-						</h1>
-					</button>
-
-					<button
-						onmouseenter="mouseEnterFilter(event)"
-						onmouseleave="mouseLeaveFilter(event)"
-						onclick="makeActive(event)"
-						class="
-							bg-no-repeat
-							flex-1
-							bg-white
-							hover:bg-yellow-500
-							p-1
-							md:p-3
-							transition-all
-							duration-200
-							filter-button
-						"
-					>
-						<img src="assets/images/motor-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="motor" />
-						<h1 class="hidden md:block pointer-events-none transition-all duration-200">
-							Gume za <span class="font-bold">motor</span>
-						</h1>
-					</button>
-
-					<button
-						onmouseenter="mouseEnterFilter(event)"
-						onmouseleave="mouseLeaveFilter(event)"
-						onclick="makeActive(event)"
-						class="
-							bg-no-repeat
-							flex-1
-							bg-white
-							hover:bg-yellow-500
-							p-1
-							md:p-3
-							transition-all
-							duration-200
-							rounded-tr-md
-							filter-button
-						"
-					>
-						<img src="assets/images/agro-svg.png" class="mb-2 mx-auto pointer-events-none" alt="auto" id="agro" />
-						<h1 class="hidden md:block pointer-events-none transition-all duration-200">
-							Agro <span class="font-bold">program</span>
-						</h1>
-					</button>
-				</div>
-
-				<div class="bg-yellow-500 py-5 px-3 rounded-b-md">
-					<h1 class="text-2xl text-white font-bold mb-5 text-center">Izaberite kategoriju</h1>
-					<div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2" id="categories">
-						<div
-							class="
-								rounded-md
-								bg-white
-								flex-1 flex
-								items-center
-								cursor-pointer
-								hover:bg-red-600 hover:text-white
-								transition-all
-								duration-200
-							"
-						>
-							<div class="w-20 md:w-12 h-12 flex items-center justify-center text-white bg-red-600 rounded-md p-2">
-								<img src="https://www.internet-prodaja-guma.com/mida/assets/img/letnja-white.svg" alt="Letnja guma" />
-							</div>
-							<span class="flex-1 text-center text-sm font-bold">LETNJA</span>
-						</div>
-
-						<div
-							class="
-								rounded-md
-								bg-white
-								flex-1 flex
-								items-center
-								cursor-pointer
-								hover:bg-red-600 hover:text-white
-								transition-all
-								duration-200
-							"
-						>
-							<div class="w-20 md:w-12 h-12 flex items-center justify-center text-white bg-red-600 rounded-md p-2">
-								<img src="https://www.internet-prodaja-guma.com/mida/assets/img/zimska-white.svg" alt="Zimska guma" />
-							</div>
-							<span class="flex-1 text-center text-sm font-bold">ZIMSKA</span>
-						</div>
-
-						<div
-							class="
-								rounded-md
-								bg-white
-								flex-1 flex
-								items-center
-								cursor-pointer
-								hover:bg-red-600 hover:text-white
-								transition-all
-								duration-200
-							"
-						>
-							<div class="w-20 md:w-12 h-12 flex items-center justify-center text-white bg-red-600 rounded-md p-2">
-								<img
-									src="https://www.internet-prodaja-guma.com/mida/assets/img/sve-sezone-wite.svg"
-									alt="Guma za sve sezone"
-								/>
-							</div>
-							<span class="flex-1 text-center text-sm font-bold">SVE SEZONE</span>
-						</div>
-
-						<div
-							class="
-								rounded-md
-								bg-white
-								flex-1 flex
-								items-center
-								cursor-pointer
-								hover:bg-red-600 hover:text-white
-								transition-all
-								duration-200
-							"
-						>
-							<div class="w-20 md:w-12 h-12 flex items-center justify-center text-white bg-red-600 rounded-md p-2">
-								<img
-									src="https://www.internet-prodaja-guma.com/mida/assets/img/kategorija-vikend-akcija.svg"
-									alt="Novo"
-								/>
-							</div>
-							<span class="flex-1 text-center text-sm font-bold">VIKEND AKCIJA</span>
-						</div>
-					</div>
+					</p>
+					<p class="mb-5 mx-5">
+						Garancija za <span class="font-bold text-gray-500">gume sa starim dotom</span> je 36 meseci i teče od datuma
+						kupovine. Iskoristite priliku i kupite gume po povoljnijim cenama.
+					</p>
 				</div>
 			</div>
 
@@ -1359,85 +900,6 @@
 			</div>
 		</div>
 
-		<!-- Ad -->
-		<div class="bg-gray-200 pt-20">
-			<div class="px-4 mb-20">
-				<h1 class="text-4xl text-center font-light mb-5">
-					<span class="font-bold">Preko 70 </span>brendova guma u ponudi
-				</h1>
-				<h4 class="text-center text-2xl font-light text-gray-500 leading-6">
-					IPG je jedina internet prodavnica guma u Srbiji koja broji više od 70 brendova guma.
-				</h4>
-			</div>
-
-			<div
-				class="bg-no-repeat bg-cover bg-center h-500 md:h-900 flex items-center justify-center"
-				style="
-					background-image: url('https://thumbs.dreamstime.com/b/car-master-mechanic-vulcanizer-repairing-tire-automatic-rubber-repair-vulcanizer-machine-auto-vulcanizing-vehicle-163778797.jpg');
-					background-position-y: 80%;
-				"
-			>
-				<div style="min-width: 300px" class="py-5 px-3 w-1/2 bg-opacity-50 bg-white">
-					<h1 class="text-4xl font-light text-center">
-						<span class="font-bold">Planirate promenu </span>dimenzije guma?
-					</h1>
-					<p class="mt-5 leading-5 text-center font-light bg-gray-400 bg-opacity-50">
-						Upotrebite kalkulator dimenzija guma da biste saznali šta se dešava sa vašim brzinometrom kada promenite
-						dimenziju gume na vašem vozilu.
-					</p>
-					<button
-						class="
-							py-3
-							px-4
-							rounded-md
-							text-white
-							font-bold
-							bg-yellow-500
-							hover:bg-yellow-600
-							transition-all
-							duration-200
-							mx-auto
-							block
-							mt-3
-						"
-					>
-						KALKULATOR DIMENZIJA
-					</button>
-				</div>
-			</div>
-
-			<div class="pt-16 mb-5 px-10 w-1/2 mx-auto" style="min-width: 300px">
-				<h1 class="text-4xl font-light text-center mb-6"><span class="font-bold">Vama </span>na sluzi</h1>
-				<p class="text-center font-light">
-					Kontaktirajte našu korisničku podršku za bilo koji vid asistencije pri kupovini pneumatika
-				</p>
-				<button
-					class="
-						py-3
-						px-4
-						rounded-md
-						text-white
-						font-bold
-						bg-yellow-500
-						hover:bg-yellow-600
-						transition-all
-						duration-200
-						mx-auto
-						block
-						mt-3
-					"
-				>
-					KONTAKTIRAJTE NAS
-				</button>
-			</div>
-			<div
-				style="
-					background-image: url('https://images.unsplash.com/photo-1538688423619-a81d3f23454b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
-				"
-				class="h-96 md:h-500 bg-center bg-cover bg-no-repeat"
-			></div>
-		</div>
-
 		<!-- Footer -->
 		<footer style="background-color: #222" class="pt-5 flex flex-wrap md:text-lg">
 			<div class="flex-1 flex flex-wrap">
@@ -1551,5 +1013,19 @@
 			<i class="fas fa-graduation-cap text-gray-700"></i> Rad na fakultetu / Főiskolai munka
 			<i class="fas fa-graduation-cap text-gray-700"></i>
 		</h1>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-211437925-1");
+		</script>
+
+		<script src="script.js"></script>
 	</body>
 </html>
