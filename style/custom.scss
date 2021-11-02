@@ -1,8 +1,10 @@
 body {
 	font-family: "Yantramanav", sans-serif;
-	position: relative;
 	font-stretch: expanded;
-	background-color: #f9fafb;
+}
+
+.mobile-navbar-hide {
+	top: calc(-100% - 100px);
 }
 
 .carousel-open:checked + .carousel-item {
