@@ -7,7 +7,12 @@ module.exports = {
 	// important: true,
 	darkMode: false, // or 'media' or 'class'
 	theme: {
-		extend: {},
+		extend: {
+			height: {
+				900: "900px",
+				500: "500px",
+			},
+		},
 	},
 	variants: {
 		extend: {},

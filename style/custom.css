@@ -2,7 +2,7 @@ body {
   font-family: "Yantramanav", sans-serif;
   position: relative;
   font-stretch: expanded;
-  background-color: #f1f1f1;
+  background-color: #f9fafb;
 }
 
 .carousel-open:checked + .carousel-item {
