@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "UA-211437925-1");
-		</script>
-
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
@@ -51,12 +39,12 @@
 			href="https://www.internet-prodaja-guma.com/mida/assets/favicon/favicon-16x16.png"
 		/>
 		<script src="https://kit.fontawesome.com/7a4ce84ec1.js" crossorigin="anonymous"></script>
-		<script src="script.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Yantramanav:100,300,400,700&amp;display=swap&amp;subset=latin-ext"
 			rel="stylesheet"
 			as="style"
 		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="style/custom.css" />
 		<title>Zimske gume, gume za sve sezone, letnje gume - Internet Prodaja Guma</title>
@@ -68,7 +56,7 @@
 		</h1>
 
 		<!-- Navbar -->
-		<div class="flex items-center py-10 px-5 justify-between">
+		<div class="flex items-center py-10 px-5 justify-between" data-aos="fade-up" data-aos-duration="1000">
 			<div class="flex space-x-8 items-center">
 				<a href="index.html">
 					<img
@@ -174,7 +162,12 @@
 		<!-- Content -->
 		<div class="px-5 mx-auto max-w-screen-xl pb-10">
 			<!-- Carousel -->
-			<div class="carousel relative rounded overflow-hidden shadow-xl">
+			<div
+				class="carousel relative rounded overflow-hidden shadow-xl"
+				data-aos="fade-up"
+				data-aos-duration="1000"
+				data-aos-delay="500"
+			>
 				<div class="carousel-inner relative overflow-hidden w-full">
 					<!--Slide 1-->
 					<input
@@ -478,7 +471,13 @@
 			</div>
 
 			<!-- Filters -->
-			<div class="mt-5 shadow-lg">
+			<div
+				class="mt-5 shadow-lg"
+				data-aos="fade-up"
+				data-aos-duration="1000"
+				data-aos-delay="1000"
+				data-aos-anchor-placement="center-bottom"
+			>
 				<div class="flex space-x-1">
 					<button
 						onmouseenter="mouseEnterFilter(event)"
@@ -701,7 +700,12 @@
 			</div>
 
 			<!-- More information -->
-			<div class="mt-5 rounded-md bg-white p-7 shadow-md space-x-1">
+			<div
+				class="mt-5 rounded-md bg-white p-7 shadow-md space-x-1"
+				data-aos="fade-up"
+				data-aos-duration="1000"
+				data-aos-anchor-placement="center-bottom
+			>
 				<h1 class="text-2xl font-bold text-center mb-3">Kliknite da saznate više o:</h1>
 				<div class="flex w-full flex-wrap lg:text-2xl">
 					<div class="flex-1 flex m-5 mr-0 justify-around">
@@ -756,7 +760,7 @@
 			</div>
 
 			<!-- Tires -->
-			<div class="mt-20">
+			<div class="mt-20" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom>
 				<h1 class="text-4xl text-center mb-16"><span class="font-bold">Trenutno </span>najtraženije gume</h1>
 				<div class="flex flex-wrap justify-around text-sm md:text-base">
 					<!-- Tire -->
@@ -1361,7 +1365,7 @@
 
 		<!-- Ad -->
 		<div class="bg-gray-200 pt-20">
-			<div class="px-4 mb-20">
+			<div class="px-4 mb-20" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
 				<h1 class="text-4xl text-center font-light mb-5">
 					<span class="font-bold">Preko 70 </span>brendova guma u ponudi
 				</h1>
@@ -1376,6 +1380,9 @@
 					background-image: url('https://thumbs.dreamstime.com/b/car-master-mechanic-vulcanizer-repairing-tire-automatic-rubber-repair-vulcanizer-machine-auto-vulcanizing-vehicle-163778797.jpg');
 					background-position-y: 80%;
 				"
+				data-aos="fade-up"
+				data-aos-duration="1000"
+				data-aos-anchor-placement="top-center"
 			>
 				<div style="min-width: 300px" class="py-5 px-3 w-1/2 bg-opacity-50 bg-white">
 					<h1 class="text-4xl font-light text-center">
@@ -1406,40 +1413,48 @@
 				</div>
 			</div>
 
-			<div class="pt-16 mb-5 px-10 w-1/2 mx-auto" style="min-width: 300px">
-				<h1 class="text-4xl font-light text-center mb-6"><span class="font-bold">Vama </span>na sluzi</h1>
-				<p class="text-center font-light">
-					Kontaktirajte našu korisničku podršku za bilo koji vid asistencije pri kupovini pneumatika
-				</p>
-				<button
-					class="
-						py-3
-						px-4
-						rounded-md
-						text-white
-						font-bold
-						bg-yellow-500
-						hover:bg-yellow-600
-						transition-all
-						duration-200
-						mx-auto
-						block
-						mt-3
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+				<div class="pt-16 mb-5 px-10 w-1/2 mx-auto" style="min-width: 300px">
+					<h1 class="text-4xl font-light text-center mb-6"><span class="font-bold">Vama </span>na sluzi</h1>
+					<p class="text-center font-light">
+						Kontaktirajte našu korisničku podršku za bilo koji vid asistencije pri kupovini pneumatika
+					</p>
+					<button
+						class="
+							py-3
+							px-4
+							rounded-md
+							text-white
+							font-bold
+							bg-yellow-500
+							hover:bg-yellow-600
+							transition-all
+							duration-200
+							mx-auto
+							block
+							mt-3
+						"
+					>
+						KONTAKTIRAJTE NAS
+					</button>
+				</div>
+				<div
+					style="
+						background-image: url('https://images.unsplash.com/photo-1538688423619-a81d3f23454b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
 					"
-				>
-					KONTAKTIRAJTE NAS
-				</button>
+					class="h-96 md:h-500 bg-center bg-cover bg-no-repeat"
+				></div>
 			</div>
-			<div
-				style="
-					background-image: url('https://images.unsplash.com/photo-1538688423619-a81d3f23454b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
-				"
-				class="h-96 md:h-500 bg-center bg-cover bg-no-repeat"
-			></div>
 		</div>
 
 		<!-- Footer -->
-		<footer style="background-color: #222" class="pt-5 flex flex-wrap md:text-lg">
+		<footer
+			style="background-color: #222"
+			class="pt-5 flex flex-wrap md:text-lg"
+			data-aos="fade-up"
+			data-aos-duration="1000"
+			data-aos-anchor-placement="center-bottom"
+		>
 			<div class="flex-1 flex flex-wrap">
 				<div class="flex-1 m-5" style="min-width: 300px">
 					<a href="index.html">
@@ -1551,5 +1566,25 @@
 			<i class="fas fa-graduation-cap text-gray-700"></i> Rad na fakultetu / Főiskolai munka
 			<i class="fas fa-graduation-cap text-gray-700"></i>
 		</h1>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-211437925-1");
+		</script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<script src="js/navbar.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>

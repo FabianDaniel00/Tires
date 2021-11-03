@@ -44,6 +44,7 @@
 			rel="stylesheet"
 			as="style"
 		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="style/custom.css" />
 		<title>Gume - Internet Prodaja Guma</title>
@@ -55,7 +56,7 @@
 		</h1>
 
 		<!-- Navbar -->
-		<div class="flex items-center py-10 px-5 justify-between">
+		<div class="flex items-center py-10 px-5 justify-between" data-aos="fade-up" data-aos-duration="1000">
 			<div class="flex space-x-8 items-center">
 				<a href="index.html">
 					<img
@@ -161,9 +162,9 @@
 		<!-- Content -->
 		<div class="px-5 mx-auto max-w-screen-xl pb-10">
 			<!-- Results -->
-			<div>
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
 				<button
-					id="collapse-button"
+					onclick="toggleResult(event)"
 					class="
 						relative
 						py-8
@@ -209,7 +210,7 @@
 						"
 					></i>
 				</button>
-				<div id="result" class="bg-gray-300 font-light">
+				<div id="result" class="bg-gray-300 font-light transition-all duration-300">
 					<p class="m-5">
 						Uštedite novac kupujući gume, popularno nazvane -
 						<span class="font-bold text-gray-500">gume sa starim dotom!</span>
@@ -901,7 +902,13 @@
 		</div>
 
 		<!-- Footer -->
-		<footer style="background-color: #222" class="pt-5 flex flex-wrap md:text-lg">
+		<footer
+			style="background-color: #222"
+			class="pt-5 flex flex-wrap md:text-lg"
+			data-aos="fade-up"
+			data-aos-duration="1000"
+			data-aos-anchor-placement="bottom-bottom"
+		>
 			<div class="flex-1 flex flex-wrap">
 				<div class="flex-1 m-5" style="min-width: 300px">
 					<a href="index.html">
@@ -1026,6 +1033,12 @@
 			gtag("config", "UA-211437925-1");
 		</script>
 
-		<script src="script.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<script src="js/navbar.js"></script>
+		<script src="js/stari_dot.js"></script>
 	</body>
 </html>
