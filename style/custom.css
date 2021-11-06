@@ -55,4 +55,38 @@ body {
   height: 0;
 }
 
+.cene-rastuce::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  transform: rotate(45deg) translateX(50%);
+  right: 50%;
+  top: 13px;
+  border-radius: 100% 0 0 0;
+  background-color: #f59e0b;
+}
+
+.sezone img {
+  position: absolute;
+  clip: rect(0px, 50px, 50px, 0px);
+}
+
+.sezone:hover img {
+  transform: translateY(-50%);
+  clip: rect(50px, 50px, 100px, 0px);
+}
+
+.active-page::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  transform: rotate(45deg) translateX(50%);
+  right: 50%;
+  top: -10px;
+  border-radius: 0 0 100% 0;
+  background-color: #f59e0b;
+}
+
 /*# sourceMappingURL=custom.css.map */

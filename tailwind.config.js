@@ -12,6 +12,9 @@ module.exports = {
 				900: "900px",
 				500: "500px",
 			},
+			margin: {
+				133: "133px",
+			},
 		},
 	},
 	variants: {
