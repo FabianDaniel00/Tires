@@ -53,4 +53,5 @@ const hideElement = (event, id) => {
 	event.target.classList.toggle("bg-yellow-500");
 	event.target.classList.toggle("text-white");
 	event.target.classList.toggle("hover:text-white");
+	event.target.classList.toggle("rounded-b-none");
 };
