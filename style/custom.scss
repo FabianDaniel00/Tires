@@ -44,13 +44,19 @@ body {
 	border-radius: 6px 6px 0 0;
 }
 
-#result {
+#result,
+#pretraga-guma,
+#detaljna-pretraga,
+.answer {
 	overflow: hidden;
 	transition: all 0.5s ease-in-out;
 	height: auto;
 }
 
-#result.collapsed {
+.collapsed,
+#result.collapsed,
+#pretraga-guma.collapsed,
+#detaljna-pretraga.collapsed {
 	height: 0;
 }
 

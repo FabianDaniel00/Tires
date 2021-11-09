@@ -1,19 +1,7 @@
-function toggleCollapse(event, id) {
-	const content = document.getElementById(id);
-	event.target.classList.toggle("rounded-md");
+function showAnswer(event) {
+	const content = event.target.parentNode.querySelector("div");
 	event.target.children[0].classList.toggle("opacity-0");
 	event.target.children[1].classList.toggle("opacity-0");
-	expandElement(content, "collapsed");
-}
-
-function toggleCategory(event, id) {
-	const content = document.getElementById(id);
-	event.target.children[0].classList.toggle("opacity-0");
-	event.target.children[1].classList.toggle("opacity-0");
-	event.target.classList.toggle("bg-yellow-500");
-	event.target.classList.toggle("text-white");
-	event.target.classList.toggle("hover:text-white");
-	event.target.classList.toggle("rounded-b-none");
 	expandElement(content, "collapsed");
 }
 
@@ -46,13 +34,3 @@ function expandElement(elem, collapseClass) {
 		elem.removeEventListener("transitionend", arguments.callee);
 	});
 }
-
-const mouseEnterFilter = (event) => {
-	picture = event.target.alt;
-	event.target.src = "assets/images/" + picture + "-svg-white.png";
-};
-
-const mouseLeaveFilter = (event) => {
-	picture = event.target.alt;
-	event.target.src = "assets/images/" + picture + "-svg.png";
-};

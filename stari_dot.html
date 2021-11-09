@@ -251,7 +251,7 @@
 				<div class="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:space-x-5">
 					<div class="mt-10 lg:mt-133 min-w-min flex flex-col" style="flex: 23%">
 						<button
-							onclick="hideElement(event, 'pretraga-guma')"
+							onclick="toggleCategory(event, 'pretraga-guma')"
 							class="
 								text-white
 								font-bold
@@ -262,7 +262,7 @@
 								lg:rounded-md
 								hover:bg-yellow-600
 								transition-colors
-								duration-200
+								duration-300
 								flex
 								items-center
 								pr-8
@@ -306,7 +306,7 @@
 							<i class="fas fa-database mr-3 order-1 pointer-events-none"></i>
 							<span class="leading-5 order-2 pointer-events-none">PRETRAGA GUMA</span>
 						</button>
-						<div id="pretraga-guma" class="bg-yellow-500 lg:bg-transparent rounded-b-md">
+						<div id="pretraga-guma" class="bg-yellow-500 lg:bg-transparent rounded-b-md transition-all duration-300">
 							<div class="p-2 lg:p-0">
 								<div class="bg-white lg:bg-transparent lg:mt-3 p-3 lg:p-0 rounded-md">
 									<span class="font-bold text-gray-500 mx-2">Vrsta vozila</span>
@@ -407,7 +407,7 @@
 						<hr class="border-t-2 border-gray-300 my-5 mx-2" />
 
 						<button
-							onclick="hideElement(event, 'detaljna-pretraga')"
+							onclick="toggleCategory(event, 'detaljna-pretraga')"
 							class="
 								hover:text-white
 								font-bold
@@ -417,7 +417,7 @@
 								lg:rounded-md
 								hover:bg-yellow-600
 								transition-colors
-								duration-200
+								duration-300
 								flex
 								items-center
 								pr-8
@@ -461,7 +461,10 @@
 							<i class="fas fa-search pointer-events-none mr-2"></i>
 							<span class="leading-5 order-2 pointer-events-none">DETALJNA PRETRAGA</span>
 						</button>
-						<div id="detaljna-pretraga" class="hidden bg-yellow-500 lg:bg-transparent rounded-b-md">
+						<div
+							id="detaljna-pretraga"
+							class="collapsed bg-yellow-500 lg:bg-transparent rounded-b-md transition-all duration-300"
+						>
 							<div class="m-2 p-2 lg:p-0 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
 								<span class="font-bold text-gray-500 mx-2">Runflat</span>
 								<div>
