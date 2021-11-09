@@ -49,7 +49,10 @@
 		<link rel="stylesheet" href="style/custom.css" />
 		<title>Gume - Internet Prodaja Guma</title>
 	</head>
-	<body class="text-base md:text-lg relative bg-gray-50 bg-no-repeat">
+	<body
+		class="text-base md:text-lg relative bg-gray-50 bg-no-repeat"
+		style="background-image: url('https://www.internet-prodaja-guma.com/mida/assets/img/rezultat-pretrage.jpg')"
+	>
 		<h1 class="bg-gray-300 font-bold text-lg sm:text-2xl p-3 text-center text-gray-500">
 			<i class="fas fa-graduation-cap text-gray-700"></i> Rad na fakultetu / Főiskolai munka
 			<i class="fas fa-graduation-cap text-gray-700"></i>
@@ -304,7 +307,7 @@
 							<span class="leading-5 order-2 pointer-events-none">PRETRAGA GUMA</span>
 						</button>
 						<div id="pretraga-guma" class="bg-yellow-500 lg:bg-transparent rounded-b-md">
-							<div class="p-2">
+							<div class="p-2 lg:p-0">
 								<div class="bg-white lg:bg-transparent lg:mt-3 p-3 lg:p-0 rounded-md">
 									<span class="font-bold text-gray-500 mx-2">Vrsta vozila</span>
 									<div class="flex flex-wrap">
@@ -411,6 +414,7 @@
 								py-6
 								px-5
 								rounded-md
+								lg:rounded-md
 								hover:bg-yellow-600
 								transition-colors
 								duration-200
@@ -458,7 +462,7 @@
 							<span class="leading-5 order-2 pointer-events-none">DETALJNA PRETRAGA</span>
 						</button>
 						<div id="detaljna-pretraga" class="hidden bg-yellow-500 lg:bg-transparent rounded-b-md">
-							<div class="m-2 p-3 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
+							<div class="m-2 p-2 lg:p-0 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
 								<span class="font-bold text-gray-500 mx-2">Runflat</span>
 								<div>
 									<span class="text-gray-400 mx-2 ml-auto">Izaberi...</span>
@@ -466,7 +470,7 @@
 								</div>
 							</div>
 							<hr class="border-t-2 border-gray-300 my-5 hidden lg:block" />
-							<div class="m-2 p-3 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
+							<div class="m-2 p-2 lg:p-0 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
 								<span class="font-bold text-gray-500 mx-2">Opterećenje</span>
 								<div>
 									<span class="text-gray-400 mx-2 ml-auto">Izaberi...</span>
@@ -474,7 +478,7 @@
 								</div>
 							</div>
 							<hr class="border-t-2 border-gray-300 my-5 hidden lg:block" />
-							<div class="m-2 p-3 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
+							<div class="m-2 p-2 lg:p-0 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
 								<span class="font-bold text-gray-500 mx-2">Buka</span>
 								<div>
 									<span class="text-gray-400 mx-2 ml-auto">Izaberi...</span>
@@ -482,7 +486,7 @@
 								</div>
 							</div>
 							<hr class="border-t-2 border-gray-300 my-5 hidden lg:block" />
-							<div class="m-2 p-3 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
+							<div class="m-2 p-2 lg:p-0 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
 								<span class="font-bold text-gray-500 mx-2">Indeks brzine</span>
 								<div>
 									<span class="text-gray-400 mx-2 ml-auto">Izaberi...</span>
@@ -490,7 +494,7 @@
 								</div>
 							</div>
 							<hr class="border-t-2 border-gray-300 my-5 hidden lg:block" />
-							<div class="m-2 p-3 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
+							<div class="m-2 p-2 lg:p-0 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
 								<span class="font-bold text-gray-500 mx-2">Potrošnja</span>
 								<div>
 									<span class="text-gray-400 mx-2 ml-auto">Izaberi...</span>
@@ -498,7 +502,7 @@
 								</div>
 							</div>
 							<hr class="border-t-2 border-gray-300 my-5 hidden lg:block" />
-							<div class="m-2 p-3 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
+							<div class="m-2 p-2 lg:p-0 lg:mt-5 lg:m-0 bg-white lg:bg-transparent rounded-md flex justify-between">
 								<span class="font-bold text-gray-500 mx-2">Prijanjanje</span>
 								<div>
 									<span class="text-gray-400 mx-2 ml-auto">Izaberi...</span>
@@ -2156,15 +2160,7 @@
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "UA-211437925-1");
-		</script>
+		<script src="js/google_analytics.js"></script>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>

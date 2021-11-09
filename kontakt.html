@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Zimske gume, letnje gume i gume za sve sezone za različite tipove vozila. Najveća online prodaja guma u Srbiji. 024-41-55-402."
+		/>
+		<meta name="keywords" content="gume, zimske, letnje, sve sezone, prodaja" />
+		<meta name="author" content="Daniel Fabian, Aron Kadar" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="sr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://auto-gume.netlify.app" />
+		<meta property="og:title" content="Zimske gume, gume za sve sezone, letnje gume " />
+		<meta
+			property="og:description"
+			content="Zimske gume, letnje gume  i gume za sve sezone za različite tipove vozila. Najveća online prodaja guma u Srbiji. 024-41-55-402"
+		/>
+		<meta property="og:image" content="https://www.internet-prodaja-guma.com/images/fb.png" />
+		<meta name="twitter:title" content="Zimske gume, gume za sve sezone, letnje gume " />
+		<meta
+			name="twitter:description"
+			content="Zimske gume, letnje gume  i gume za sve sezone za različite tipove vozila. Najveća online prodaja guma u Srbiji. 024-41-55-402"
+		/>
+		<meta name="robots" content="index, follow" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="https://www.internet-prodaja-guma.com/mida/assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="https://www.internet-prodaja-guma.com/mida/assets/favicon/favicon-16x16.png"
+		/>
+		<script src="https://kit.fontawesome.com/7a4ce84ec1.js" crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Yantramanav:100,300,400,700&amp;display=swap&amp;subset=latin-ext"
+			rel="stylesheet"
+			as="style"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style/custom.css" />
+		<title>Kontaktirajte nas - Internet Prodaja Guma</title>
+	</head>
+	<body
+		class="text-base md:text-lg relative bg-gray-50 bg-no-repeat"
+		style="background-image: url('https://www.internet-prodaja-guma.com/assets/img/kontakt.jpg')"
+	>
+		<h1 class="bg-gray-300 font-bold text-lg sm:text-2xl p-3 text-center text-gray-500">
+			<i class="fas fa-graduation-cap text-gray-700"></i> Rad na fakultetu / Főiskolai munka
+			<i class="fas fa-graduation-cap text-gray-700"></i>
+		</h1>
+
+		<!-- Navbar -->
+		<div class="flex items-center py-10 px-5 justify-between" data-aos="fade-up" data-aos-duration="1000">
+			<div class="flex space-x-8 items-center">
+				<a href="index.html">
+					<img
+						src="https://www.internet-prodaja-guma.com/mida/assets/img/logo-ipg.svg"
+						alt="logo"
+						class="w-24 md:w-40"
+					/>
+				</a>
+				<a href="stari_dot.html" class="font-bold hover:text-gray-500 transition-all duration-200 hidden xl:block"
+					>STARI DOT</a
+				>
+				<a href="kontakt.html" class="font-bold hover:text-gray-500 transition-all duration-200 hidden xl:block"
+					>KONTAKT</a
+				>
+				<a
+					href="najcesca_pitanja.html"
+					class="font-bold hover:text-gray-500 transition-all duration-200 hidden xl:block"
+					>NAJČEŠĆA PITANJA</a
+				>
+				<a href="opsti_uslovi.html" class="font-bold hover:text-gray-500 transition-all duration-200 hidden xl:block"
+					>OPŠTI USLOVI</a
+				>
+				<a href="tel:+381244155402" class="font-bold hover:text-gray-500 transition-all duration-200 hidden xl:block"
+					><i class="fas fa-phone-alt"></i> 024 / 4155-402</a
+				>
+			</div>
+			<div class="flex items-center space-x-5">
+				<button
+					class="
+						p-4
+						bg-gray-400
+						font-bold
+						text-white
+						rounded
+						hover:bg-gray-500
+						transition-all
+						duration-200
+						hidden
+						xl:block
+					"
+				>
+					<i class="fas fa-user-plus mr-2"></i>
+					PRIJAVA
+				</button>
+				<button id="menu-toggle" onclick="openMenu()" class="xl:hidden text-3xl">
+					<i class="fas fa-bars"></i>
+				</button>
+				<button class="p-4 bg-yellow-500 font-bold text-white rounded hover:bg-yellow-600 transition-all duration-200">
+					<i class="fas fa-shopping-cart mr-2"></i>
+					KORPA (0)
+				</button>
+			</div>
+		</div>
+
+		<!-- Mobile Navbar -->
+		<div
+			class="
+				fixed
+				w-screen
+				h-screen
+				mobile-navbar-hide
+				left-0
+				transition-all
+				duration-300
+				overflow-auto
+				bg-gray-100
+				p-5
+				md:p-10
+				flex flex-col
+				items-center
+				z-50
+			"
+			id="mobile-navbar"
+		>
+			<button class="text-4xl w-min ml-auto hover:text-gray-600 transition-all duration-200" onclick="closeMenu()">
+				<i class="fas fa-times"></i>
+			</button>
+			<div class="flex flex-col items-center space-y-20 w-full">
+				<a href="stari_dot.html" class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					>STARI DOT</a
+				>
+				<a href="kontakt.html" class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					>KONTAKT</a
+				>
+				<a
+					href="najcesca_pitanja.html"
+					class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					>NAJČEŠĆA PITANJA</a
+				>
+				<a href="opsti_uslovi.html" class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					>OPŠTI USLOVI</a
+				>
+				<a href="tel:+381244155402" class="font-bold hover:text-gray-500 transition-all duration-200 w-full text-center"
+					><i class="fas fa-phone-alt"></i> 024 / 4155-402</a
+				>
+				<button class="p-4 bg-gray-400 font-bold text-white rounded hover:bg-gray-500 transition-all duration-200">
+					<i class="fas fa-user-plus mr-2"></i>
+					PRIJAVA
+				</button>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div class="px-5 mx-auto max-w-screen-xl pb-10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+			<h1 class="font-light text-6xl my-10"><span class="font-bold">Kontaktirajte </span>nas</h1>
+
+			<div class="flex flex-col md:flex-row">
+				<!-- Kontakt form -->
+				<div style="flex: 40%" class="md:mr-5 px-5 py-8 md:py-12 md:px-8 bg-white rounded-md shadow-md">
+					<h1 class="font-light text-4xl"><span class="font-bold">Kontakt </span>forma</h1>
+					<span class="font-light text-gray-600 mt-5 block"
+						>Pošaljite nam poruku a mi ćemo vam blagovremeno odgovoriti</span
+					>
+					<form class="mt-8">
+						<div class="relative flex">
+							<input
+								type="text"
+								placeholder=" "
+								class="py-3 focus:outline-none focus:ring-0 border-b-2 border-gray-300 w-full form-input order-2"
+							/>
+							<label
+								class="
+									absolute
+									transform
+									translate-y-1/2
+									bottom-1/2
+									text-gray-400
+									font-light
+									transition-all
+									duration-200
+									form-label
+									order-1
+								"
+								>Ime i prezime
+								<span class="text-red-600 font-normal text-lg transition-all duration-200">*</span></label
+							>
+						</div>
+
+						<div class="relative flex my-6">
+							<input
+								type="text"
+								placeholder=" "
+								class="py-3 focus:outline-none focus:ring-0 border-b-2 border-gray-300 w-full form-input order-2"
+							/>
+							<label
+								class="
+									absolute
+									transform
+									translate-y-1/2
+									bottom-1/2
+									text-gray-400
+									font-light
+									transition-all
+									duration-200
+									form-label
+									order-1
+								"
+								>Ime i prezime
+								<span class="text-red-600 font-normal text-lg transition-all duration-200">*</span></label
+							>
+						</div>
+
+						<span class="font-bold mb-2 block">Predmet poruke:</span>
+
+						<select class="p-2 rounded bg-yellow-500 text-white w-full">
+							<option>Upit za prodaju</option>
+							<option>Pitanje vezano za isporuku</option>
+							<option>Ostalo...</option>
+						</select>
+
+						<div class="relative flex my-6">
+							<input
+								type="textarea"
+								placeholder=" "
+								class="py-3 focus:outline-none focus:ring-0 border-b-2 border-gray-300 w-full form-input order-2"
+							/>
+							<label
+								class="
+									absolute
+									transform
+									translate-y-1/2
+									bottom-1/2
+									text-gray-400
+									font-light
+									transition-all
+									duration-200
+									form-label
+									order-1
+								"
+								>Poruka <span class="text-red-600 font-normal text-lg transition-all duration-200">*</span></label
+							>
+						</div>
+
+						<button
+							class="
+								font-bold
+								text-white
+								py-3
+								px-2
+								rounded-md
+								bg-red-600
+								hover:bg-red-700
+								transition-all
+								duration-200
+								w-full
+								text-md
+							"
+						>
+							POŠALJI PORUKU
+						</button>
+					</form>
+				</div>
+
+				<!-- Map -->
+				<div style="flex: 60%" class="flex flex-col">
+					<div class="mt-5 md:mt-0 px-2 md:px-5 py-5 md:py-8 bg-white rounded-md shadow-md flex flex-wrap">
+						<div class="flex-1 flex max-w-max min-w-min whitespace-nowrap m-3 md:m-5 items-center justify-center">
+							<img
+								src="https://www.internet-prodaja-guma.com/assets/img/kontakt-adresa.svg"
+								width="50px"
+								alt="marker"
+								class="mr-3"
+							/>
+							<div class="font-light text-gray-400">
+								<span class="font-bold text-black block">Vladimira Nazora 7,</span>
+								<span class="text-sm block">
+									24000 Subotica,
+									<br />
+									Republika Srbija
+								</span>
+							</div>
+						</div>
+
+						<div class="flex-1 flex max-w-max min-w-min whitespace-nowrap m-3 md:m-5 items-center justify-center">
+							<img
+								src="https://www.internet-prodaja-guma.com/assets/img/kontakt-broj-telefona.svg"
+								width="50px"
+								alt="marker"
+								class="mr-3"
+							/>
+							<div class="font-light text-gray-400 cursor-pointer" onclick="showPhoneNumber(event)">
+								<span class="font-bold text-black block pointer-events-none">024 XX XX XXX</span>
+								<span class="text-sm block pointer-events-none"> (Kliknite da otkrijete broj) </span>
+							</div>
+						</div>
+
+						<div class="flex-1 flex max-w-max min-w-min whitespace-nowrap m-3 md:m-5 items-center justify-center">
+							<img
+								src="https://www.internet-prodaja-guma.com/assets/img/kontakt-info.svg"
+								width="50px"
+								alt="marker"
+								class="mr-3"
+							/>
+							<div class="font-light text-gray-400">
+								<span class="font-bold text-black block">IPG D.O.O.</span>
+								<span class="text-sm block">
+									PIB:107219509
+									<br />
+									Matični broj: 20757922
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.445037590879!2d19.66958009324603!3d46.10203839785398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474366ceb2fa586d%3A0x8911ecaa2e28f296!2sINTERNET+PRODAJA+GUMA!5e0!3m2!1ssr!2srs!4v1445593691813"
+						width="100%"
+						height="100%"
+						frameborder="0"
+						class="border-0 shadow-md mt-5 rounded-md"
+						allowfullscreen=""
+					></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!-- Chat -->
+		<div
+			class="
+				fixed
+				bottom-5
+				right-2
+				text-4xl text-white
+				flex
+				items-center
+				justify-center
+				rounded-full
+				bg-yellow-500
+				hover:bg-yellow-600
+				transition-all
+				duration-200
+				w-20
+				h-20
+				z-50
+			"
+		>
+			<i class="fas fa-comment-dots"></i>
+		</div>
+
+		<!-- Footer -->
+		<footer
+			style="background-color: #222"
+			class="pt-5 flex flex-wrap md:text-lg"
+			data-aos="fade-up"
+			data-aos-duration="1000"
+		>
+			<div class="flex-1 flex flex-wrap">
+				<div class="flex-1 m-5" style="min-width: 300px">
+					<a href="index.html">
+						<img
+							src="https://www.internet-prodaja-guma.com/mida/assets/img/logo-ipg-inv.svg"
+							alt="logo"
+							class="w-24 md:w-40 mb-10"
+						/>
+					</a>
+					<h1 class="text-white font-bold text-xl my-3">Internet prodaja guma</h1>
+					<span class="font-light text-gray-400 leading-5 block"
+						>Vladimira Nazora 7, 24000 Subotica, Republika Srbija.</span
+					>
+					<h1 class="text-white font-bold text-xl my-3">Radno vreme</h1>
+					<span class="font-light text-gray-400">Pon/Pet 8-16h</span>
+				</div>
+				<div class="flex-1 m-5" style="min-width: 300px">
+					<h1 class="text-white font-bold text-xl mb-7">Linkovi</h1>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Plaćanje cene</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Zaštita privatnosi</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Kreiranje porudžbine</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Reklamacija</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Najčešća pitanja</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Obaveštenje o privatnosti</span
+					>
+				</div>
+			</div>
+			<div class="flex-1 flex flex-wrap items- mb-16">
+				<div class="flex-1 m-5" style="min-width: 300px">
+					<h1 class="text-white font-bold text-xl mb-7">Kompanija</h1>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>O nama</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Opšti uslovi</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Isporuka</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Saobraznost</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Odustanak od ugovora</span
+					>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Garancija kvaliteta</span
+					>
+				</div>
+				<div class="flex-1 m-5" style="min-width: 300px">
+					<h1 class="text-white font-bold text-xl mb-7">Newsletter</h1>
+					<span class="font-light text-gray-400 my-3 block hover:text-gray-200 transition-all duration-200"
+						>Prijavite se na našu mejling listu.</span
+					>
+					<form>
+						<input
+							type="email"
+							placeholder="Email adresa"
+							class="
+								p-2
+								bg-gray-100
+								text-gray-600
+								border-2 border-white
+								focus:outline-none focus:ring-1
+								rounded-md
+								font-light
+								w-full
+							"
+						/>
+						<button
+							class="
+								py-3
+								px-4
+								rounded-md
+								text-white
+								font-bold
+								bg-yellow-500
+								hover:bg-yellow-600
+								transition-all
+								duration-200
+								mx-auto
+								block
+								mt-3
+								w-full
+							"
+						>
+							PRIJAVI ME
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="p-4 bg-white text-center w-full">
+				Copyright © 2009 - 2021 - Sva prava zadržana | Fábián Dániel & Kádár Áron
+			</div>
+		</footer>
+
+		<h1 class="bg-gray-300 font-bold text-lg sm:text-2xl p-3 text-center text-gray-500">
+			<i class="fas fa-graduation-cap text-gray-700"></i> Rad na fakultetu / Főiskolai munka
+			<i class="fas fa-graduation-cap text-gray-700"></i>
+		</h1>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"></script>
+		<script src="js/google_analytics.js"></script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<script src="js/navbar.js"></script>
+		<script src="js/kontakt.js"></script>
+	</body>
+</html>

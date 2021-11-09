@@ -49,7 +49,10 @@
 		<link rel="stylesheet" href="style/custom.css" />
 		<title>Zimske gume, gume za sve sezone, letnje gume - Internet Prodaja Guma</title>
 	</head>
-	<body class="text-base md:text-lg relative bg-gray-50 bg-no-repeat">
+	<body
+		class="text-base md:text-lg relative bg-gray-50 bg-no-repeat"
+		style="background-image: url('https://www.internet-prodaja-guma.com/mida/assets/img/rezultat-pretrage.jpg')"
+	>
 		<h1 class="bg-gray-300 font-bold text-lg sm:text-2xl p-3 text-center text-gray-500">
 			<i class="fas fa-graduation-cap text-gray-700"></i> Rad na fakultetu / Főiskolai munka
 			<i class="fas fa-graduation-cap text-gray-700"></i>
@@ -704,7 +707,7 @@
 				class="mt-5 rounded-md bg-white p-7 shadow-md space-x-1"
 				data-aos="fade-up"
 				data-aos-duration="1000"
-				data-aos-anchor-placement="center-bottom
+				data-aos-anchor-placement="center-bottom"
 			>
 				<h1 class="text-2xl font-bold text-center mb-3">Kliknite da saznate više o:</h1>
 				<div class="flex w-full flex-wrap lg:text-2xl">
@@ -760,7 +763,7 @@
 			</div>
 
 			<!-- Tires -->
-			<div class="mt-20" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom>
+			<div class="mt-20" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
 				<h1 class="text-4xl text-center mb-16"><span class="font-bold">Trenutno </span>najtraženije gume</h1>
 				<div class="flex flex-wrap justify-around text-sm md:text-base">
 					<!-- Tire -->
@@ -1447,6 +1450,29 @@
 			</div>
 		</div>
 
+		<!-- Chat -->
+		<div
+			class="
+				fixed
+				bottom-5
+				right-2
+				text-4xl text-white
+				flex
+				items-center
+				justify-center
+				rounded-full
+				bg-yellow-500
+				hover:bg-yellow-600
+				transition-all
+				duration-200
+				w-20
+				h-20
+				z-50
+			"
+		>
+			<i class="fas fa-comment-dots"></i>
+		</div>
+
 		<!-- Footer -->
 		<footer
 			style="background-color: #222"
@@ -1568,15 +1594,7 @@
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211437925-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "UA-211437925-1");
-		</script>
+		<script src="js/google_analytics.js"></script>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
