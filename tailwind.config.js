@@ -1,9 +1,10 @@
 module.exports = {
-	purge: [],
-	// {
-	// 	enabled: true,
-	// 	content: ["./**/*.html"],
-	// },
+	purge:
+		// [],
+		{
+			enabled: true,
+			content: ["./**/*.html"],
+		},
 	// important: true,
 	darkMode: false, // or 'media' or 'class'
 	theme: {
