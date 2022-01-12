@@ -54,7 +54,7 @@
 		style="background-image: url('https://www.internet-prodaja-guma.com/mida/assets/img/rezultat-pretrage.jpg')"
 	>
 		<h1 class="bg-red-600 font-bold text-lg sm:text-2xl p-3 text-center text-gray-100">
-			<i class="fas fa-graduation-cap text-gray-200"></i> Rad na fakultetu / Főiskolai munka
+			<i class="fas fa-graduation-cap text-gray-200"></i> Školski projekat / Főiskolai munka
 			<i class="fas fa-graduation-cap text-gray-200"></i><br /><span class="text-xl"
 				>Originalni sajt / Eredeti oldal: </span
 			><a class="text-gray-300 italic font-normal" href="https://www.internet-prodaja-guma.com"
@@ -92,18 +92,7 @@
 			</div>
 			<div class="flex items-center space-x-5">
 				<button
-					class="
-						p-4
-						bg-gray-400
-						font-bold
-						text-white
-						rounded
-						hover:bg-gray-500
-						transition-all
-						duration-200
-						hidden
-						xl:block
-					"
+					class="p-4 bg-gray-400 font-bold text-white rounded hover:bg-gray-500 transition-all duration-200 hidden xl:block"
 				>
 					<i class="fas fa-user-plus mr-2"></i>
 					PRIJAVA
@@ -120,22 +109,7 @@
 
 		<!-- Mobile Navbar -->
 		<div
-			class="
-				fixed
-				w-screen
-				h-screen
-				mobile-navbar-hide
-				left-0
-				transition-all
-				duration-300
-				overflow-auto
-				bg-gray-100
-				p-5
-				md:p-10
-				flex flex-col
-				items-center
-				z-50
-			"
+			class="fixed w-screen h-screen mobile-navbar-hide left-0 transition-all duration-300 overflow-auto bg-gray-100 p-5 md:p-10 flex flex-col items-center z-50"
 			id="mobile-navbar"
 		>
 			<button class="text-4xl w-min ml-auto hover:text-gray-600 transition-all duration-200" onclick="closeMenu()">
@@ -172,49 +146,14 @@
 			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
 				<button
 					onclick="toggleCollapse(event, 'result')"
-					class="
-						relative
-						py-8
-						px-6
-						pr-12
-						bg-white
-						font-bold
-						text-center text-4xl
-						rounded-t-md
-						w-full
-						transition-all
-						duration-300
-					"
+					class="relative py-8 px-6 pr-12 bg-white font-bold text-center text-4xl rounded-t-md w-full transition-all duration-300"
 				>
 					Rezultati pretrage DOT guma
 					<i
-						class="
-							fas
-							fa-minus
-							absolute
-							text-base
-							right-6
-							transform
-							top-1/2
-							-translate-y-1/2
-							transition-all
-							duration-300
-						"
+						class="fas fa-minus absolute text-base right-6 transform top-1/2 -translate-y-1/2 transition-all duration-300"
 					></i>
 					<i
-						class="
-							fas
-							fa-plus
-							absolute
-							text-base
-							right-6
-							transform
-							top-1/2
-							-translate-y-1/2
-							transition-all
-							duration-300
-							opacity-0
-						"
+						class="fas fa-plus absolute text-base right-6 transform top-1/2 -translate-y-1/2 transition-all duration-300 opacity-0"
 					></i>
 				</button>
 				<div id="result" class="bg-gray-300 font-light transition-all duration-300">
@@ -256,56 +195,13 @@
 					<div class="mt-10 lg:mt-133 min-w-min flex flex-col" style="flex: 23%">
 						<button
 							onclick="toggleCategory(event, 'pretraga-guma')"
-							class="
-								text-white
-								font-bold
-								py-6
-								px-5
-								bg-yellow-500
-								rounded-md rounded-b-none
-								lg:rounded-md
-								hover:bg-yellow-600
-								transition-colors
-								duration-300
-								flex
-								items-center
-								pr-8
-								relative
-								w-full
-							"
+							class="text-white font-bold py-6 px-5 bg-yellow-500 rounded-md rounded-b-none lg:rounded-md hover:bg-yellow-600 transition-colors duration-300 flex items-center pr-8 relative w-full"
 						>
 							<i
-								class="
-									fas
-									fa-minus
-									absolute
-									text-base
-									right-3
-									transform
-									top-1/2
-									-translate-y-1/2
-									transition-all
-									duration-300
-									order-3
-									pointer-events-none
-								"
+								class="fas fa-minus absolute text-base right-3 transform top-1/2 -translate-y-1/2 transition-all duration-300 order-3 pointer-events-none"
 							></i>
 							<i
-								class="
-									fas
-									fa-plus
-									absolute
-									text-base
-									right-3
-									transform
-									top-1/2
-									-translate-y-1/2
-									transition-all
-									duration-300
-									opacity-0
-									order-4
-									pointer-events-none
-								"
+								class="fas fa-plus absolute text-base right-3 transform top-1/2 -translate-y-1/2 transition-all duration-300 opacity-0 order-4 pointer-events-none"
 							></i>
 							<i class="fas fa-database mr-3 order-1 pointer-events-none"></i>
 							<span class="leading-5 order-2 pointer-events-none">PRETRAGA GUMA</span>
@@ -412,55 +308,13 @@
 
 						<button
 							onclick="toggleCategory(event, 'detaljna-pretraga')"
-							class="
-								hover:text-white
-								font-bold
-								py-6
-								px-5
-								rounded-md
-								lg:rounded-md
-								hover:bg-yellow-600
-								transition-colors
-								duration-300
-								flex
-								items-center
-								pr-8
-								relative
-								w-full
-							"
+							class="hover:text-white font-bold py-6 px-5 rounded-md lg:rounded-md hover:bg-yellow-600 transition-colors duration-300 flex items-center pr-8 relative w-full"
 						>
 							<i
-								class="
-									fas
-									fa-minus
-									absolute
-									text-base
-									right-3
-									transform
-									top-1/2
-									-translate-y-1/2
-									transition-all
-									duration-300
-									opacity-0
-									order-3
-									pointer-events-none
-								"
+								class="fas fa-minus absolute text-base right-3 transform top-1/2 -translate-y-1/2 transition-all duration-300 opacity-0 order-3 pointer-events-none"
 							></i>
 							<i
-								class="
-									fas
-									fa-plus
-									absolute
-									text-base
-									right-3
-									transform
-									top-1/2
-									-translate-y-1/2
-									transition-all
-									duration-300
-									order-4
-									pointer-events-none
-								"
+								class="fas fa-plus absolute text-base right-3 transform top-1/2 -translate-y-1/2 transition-all duration-300 order-4 pointer-events-none"
 							></i>
 							<i class="fas fa-search pointer-events-none mr-2"></i>
 							<span class="leading-5 order-2 pointer-events-none">DETALJNA PRETRAGA</span>
@@ -520,20 +374,7 @@
 						</div>
 
 						<button
-							class="
-								rounded-md
-								text-white
-								px-5
-								py-3
-								bg-red-600
-								hover:bg-red-700
-								transition-all
-								duration-200
-								w-full
-								font-bold
-								mt-5
-								mb-10
-							"
+							class="rounded-md text-white px-5 py-3 bg-red-600 hover:bg-red-700 transition-all duration-200 w-full font-bold mt-5 mb-10"
 						>
 							<i class="fas fa-search"></i>
 							PRIMENI FILTERE
@@ -612,16 +453,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/225758_414411451382758.jpg');
 											background-color: #fff;
@@ -725,36 +557,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -764,16 +574,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/225758_414411451382758.jpg');
 											background-color: #fff;
@@ -877,36 +678,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -916,16 +695,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/bf-goodrich-touring.jpg');
 											background-color: #fff;
@@ -1029,36 +799,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -1068,16 +816,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/225758_414411451382758.jpg');
 											background-color: #fff;
@@ -1181,36 +920,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -1220,16 +937,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/161992_834391451382582.jpg');
 											background-color: #fff;
@@ -1333,36 +1041,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -1372,16 +1058,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/182947_210271451382588.jpg');
 											background-color: #fff;
@@ -1485,36 +1162,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -1524,16 +1179,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/530733_773231451382403.jpg');
 											background-color: #fff;
@@ -1637,36 +1283,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -1676,16 +1300,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/goodrich-g-grip.jpg');
 											background-color: #fff;
@@ -1789,36 +1404,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -1828,16 +1421,7 @@
 								<!-- Tire -->
 								<div class="max-w-sm rounded-md flex-1 m-1" style="min-width: 302px">
 									<div
-										class="
-											overflow-hidden
-											bg-no-repeat
-											min-w
-											bg-center
-											border-b-4 border-black
-											relative
-											rounded-t-md
-											bg-cover
-										"
+										class="overflow-hidden bg-no-repeat min-w bg-center border-b-4 border-black relative rounded-t-md bg-cover"
 										style="
 											background-image: url('https://www.internet-prodaja-guma.com/cdn/882328_501351451382409.jpg');
 											background-color: #fff;
@@ -1941,36 +1525,14 @@
 												<button class="text-yellow-500"><i class="fas fa-plus"></i></button>
 											</div>
 											<button
-												class="
-													text-white
-													py-3
-													px-5
-													bg-red-600
-													font-bold
-													rounded-md
-													hover:bg-red-700
-													transition-all
-													duration-200
-													flex-1
-												"
+												class="text-white py-3 px-5 bg-red-600 font-bold rounded-md hover:bg-red-700 transition-all duration-200 flex-1"
 											>
 												<i class="fas fa-shopping-cart mr-1"></i> DODAJ
 											</button>
 										</div>
 
 										<button
-											class="
-												bg-yellow-500
-												hover:bg-yellow-600
-												transition-all
-												duration-200
-												w-full
-												py-3
-												rounded-md
-												font-bold
-												text-white text-lg
-												mt-4
-											"
+											class="bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-full py-3 rounded-md font-bold text-white text-lg mt-4"
 										>
 											SAZNAJ VIŠE O GUMI
 										</button>
@@ -1989,55 +1551,18 @@
 				<!-- Pagination -->
 				<div class="flex justify-end items-center my-10">
 					<span
-						class="
-							w-14
-							h-8
-							flex
-							justify-center
-							items-center
-							text-white
-							font-bold
-							active-page
-							rounded
-							bg-yellow-500
-							relative
-						"
+						class="w-14 h-8 flex justify-center items-center text-white font-bold active-page rounded bg-yellow-500 relative"
 						>1</span
 					>
 					<span class="w-14 h-8 flex justify-center items-center font-bold">2</span>
 					<span class="w-14 h-8 flex justify-center items-center font-bold">3</span>
 					<span class="w-14 h-8 flex justify-center items-center font-bold">4</span>
 					<span
-						class="
-							w-10
-							h-10
-							flex
-							justify-center
-							items-center
-							rounded-full
-							bg-gray-300
-							text-white
-							mr-2
-							hover:bg-yellow-600
-							transition-all
-							duration-200
-						"
+						class="w-10 h-10 flex justify-center items-center rounded-full bg-gray-300 text-white mr-2 hover:bg-yellow-600 transition-all duration-200"
 						><i class="fas fa-caret-right"></i
 					></span>
 					<span
-						class="
-							w-10
-							h-10
-							flex
-							justify-center
-							items-center
-							rounded-full
-							bg-gray-300
-							text-white
-							hover:bg-yellow-600
-							transition-all
-							duration-200
-						"
+						class="w-10 h-10 flex justify-center items-center rounded-full bg-gray-300 text-white hover:bg-yellow-600 transition-all duration-200"
 					>
 						<i class="fas fa-caret-right"></i>
 						<i class="fas fa-caret-right"></i>
@@ -2048,24 +1573,7 @@
 
 		<!-- Chat -->
 		<div
-			class="
-				fixed
-				bottom-5
-				right-2
-				text-4xl text-white
-				flex
-				items-center
-				justify-center
-				rounded-full
-				bg-yellow-500
-				hover:bg-yellow-600
-				transition-all
-				duration-200
-				w-20
-				h-20
-				z-50
-				shadow-lg
-			"
+			class="fixed bottom-5 right-2 text-4xl text-white flex items-center justify-center rounded-full bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 w-20 h-20 z-50 shadow-lg"
 		>
 			<i class="fas fa-comment-dots"></i>
 		</div>
@@ -2147,33 +1655,10 @@
 						<input
 							type="email"
 							placeholder="Email adresa"
-							class="
-								p-2
-								bg-gray-100
-								text-gray-600
-								border-2 border-white
-								focus:outline-none focus:ring-1
-								rounded-md
-								font-light
-								w-full
-							"
+							class="p-2 bg-gray-100 text-gray-600 border-2 border-white focus:outline-none focus:ring-1 rounded-md font-light w-full"
 						/>
 						<button
-							class="
-								py-3
-								px-4
-								rounded-md
-								text-white
-								font-bold
-								bg-yellow-500
-								hover:bg-yellow-600
-								transition-all
-								duration-200
-								mx-auto
-								block
-								mt-3
-								w-full
-							"
+							class="py-3 px-4 rounded-md text-white font-bold bg-yellow-500 hover:bg-yellow-600 transition-all duration-200 mx-auto block mt-3 w-full"
 						>
 							PRIJAVI ME
 						</button>
@@ -2183,7 +1668,7 @@
 		</footer>
 
 		<h1 class="bg-red-600 font-bold text-lg sm:text-2xl p-3 text-center text-gray-100">
-			<i class="fas fa-graduation-cap text-gray-200"></i> Rad na fakultetu / Főiskolai munka
+			<i class="fas fa-graduation-cap text-gray-200"></i> Školski projekat / Főiskolai munka
 			<i class="fas fa-graduation-cap text-gray-200"></i><br /><span class="text-xl"
 				>Originalni sajt / Eredeti oldal: </span
 			><a class="text-gray-300 italic font-normal" href="https://www.internet-prodaja-guma.com"
